@@ -1,0 +1,15 @@
+.footer {
+  margin-top: auto;
+  padding: 12px 6px;
+  text-align: center;
+  background-color: #2b2d42;
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+.footer p {
+  margin: 0;
+  letter-spacing: 1px;
+}

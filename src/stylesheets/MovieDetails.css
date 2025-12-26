@@ -1,0 +1,279 @@
+.detailPage{
+    width: 100%;
+    height: 175vh;
+    background: #ffffff;
+    padding-top: 30px;
+}
+
+.movieName{
+    text-align: left;
+    font-size: 40px;
+    margin-left: 15%;
+    margin-top: 25px;
+    color: #103a68;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.listOfItems{
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.movieInfos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.movieInfo{
+    list-style-type: none;
+    font-size: 16px;
+    color: rgb(63, 62, 62);
+    font-weight: 600;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    height: 140vh;
+    margin: 40px auto;
+}
+
+.posterVideo{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 440px;;
+    margin-bottom: 25px;
+}
+
+.poster{
+    width: 31%;
+    height: 440px;
+}
+
+.poster img{
+    width: 100%;
+    height: 440px;
+    object-fit: fill;
+    border-radius: 1rem;
+}
+
+.video{
+    width: 69%;
+    height: 440px;
+    border-radius: 1rem;
+}
+
+.video .videoPlay{
+    width: 100%;
+    height: 440px;
+    object-fit: fill;
+    border-radius: 1rem;
+}
+
+.genre{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin: 0px auto;
+    height: 37px;
+    width: 50%;
+}
+
+.genreCard{
+    width: 30%;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 7px;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.genreCard:hover{
+    background-color: rgba(61, 60, 60, 0.3);
+    transform: translateY(-4px);
+}
+
+.otherInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.otherInfo p{
+    font-size: 22px;
+    font-weight: 600;
+    color:rgb(40, 37, 37);
+    letter-spacing: 1px;
+}
+
+#desc{
+    font-weight: 500;
+    font-size: 23px;
+    color:#191f24;
+    word-spacing: 2px;
+}
+
+.ans{
+    margin-left: 40px;
+    color:#337dcd;
+}
+
+hr{
+    height: 3px;
+    background-color:grey;
+    border: none;
+}
+
+.extraInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 60%;
+}
+
+.extraInfo p span{
+    margin-left: 25px;
+}
+
+.goBackDiv{
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.goBackBtn{
+    width: 20%;
+    height: 40px;
+    margin: 50px auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color:#103a68;
+    color: white;
+    border-radius: 0.5rem;
+    transform: transform 0.2s ease-in-out;
+    border: none;
+}
+
+.goBackBtn:hover{
+    background-color: #23548a;
+    transform: scale(1.03);
+}
+
+.goBackBtn #btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sep{
+    color: black;
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+@media (max-width: 700px) {
+    .detailPage{
+        height: 230vh;
+    }
+    .movieName{
+        text-align: center;
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .listOfItems{
+        text-align: center;
+        margin: 5px 30%;
+    }
+    .movieInfos{
+        gap: 10px;
+        font-size: 24px;
+        margin: 0px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        width: 100%;
+        height: 130vh;
+    }
+    .posterVideo{
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .poster{
+        width: 100%;
+    }
+    .video{
+        width: 100%;
+    }
+    .genre{
+        width: 100%;
+        margin: 10px auto 5px;
+        gap: 5px;
+    }
+    .genreCard{
+        width: 25%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .otherInfo p{
+        margin-top: -10px;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: justify;
+    }
+    #desc{
+        font-size: 21px;
+    }
+    .ans{
+        font-size: 20px;
+    }
+    .extraInfo{
+        width: 100%;
+        gap: 20%;
+    }
+    hr{
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .goBackBtn{
+        width: 50%;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1400px){
+    .detailPage{
+        height: 105vh;
+    }
+    .movieName{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .listOfItems{
+        margin-left: 80px;
+        text-align: center;
+
+    }
+    .box{
+        width: 90%;
+        height: 75vh;
+    }
+    .poster{
+        width: 40%;
+    }
+    .genre{
+        width: 90%;
+    }
+}

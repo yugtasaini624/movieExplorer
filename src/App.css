@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  flex: 1; /* pushes footer down */
+}
+
+.app-layout {
+  min-height: 100svh; /* mobile safe viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: block;
+}
+
